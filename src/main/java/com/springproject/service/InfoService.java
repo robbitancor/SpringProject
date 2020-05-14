@@ -5,6 +5,8 @@ import com.springproject.pojo.Info;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class InfoService {
     @Autowired
@@ -15,6 +17,10 @@ public class InfoService {
         info.setName("rob");
         info.setAge(28);
         infoRepository.save(info);
+    }
+
+    public Iterable<Info> findInfos(){
+        return infoRepository.findAll();
     }
 
 

@@ -27,4 +27,8 @@ public class SimplePersonalController {
         return new SimplePojo();
     }
 
+    @GetMapping(value = "/getinfos",produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Info> getAllInfo(){
+        return infoService.findInfos();
+    }
 }

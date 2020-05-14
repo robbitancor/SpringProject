@@ -1,6 +1,6 @@
 package com.springproject;
 
-import com.springproject.main.AppConfig;
+import com.springproject.config.AppConfig;
 import com.springproject.pojo.Person;
 import junit.framework.TestCase;
 import org.junit.Assert;
